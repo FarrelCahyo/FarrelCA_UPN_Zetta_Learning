@@ -5,10 +5,13 @@
 
 body {
     background-image: url(https://th.bing.com/th/id/R.8758e822e3ade67c565f65bd26b18310?rik=xr4Q5RlG1nu8Sg&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f45%2f87%2fql2YgM.jpg&ehk=%2fyjbFnErgCToUud8ISAvptHYNzhJbf1Tf7KRqQZKWN0%3d&risl=&pid=ImgRaw&r=0);
-    margin: 25px;
+    /* margin: 25px; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container-card {
@@ -18,6 +21,22 @@ body {
 
 .top-card, .mid-card, .bot-card{
     display: inline-flex;
+}
+
+.bg-primary{
+    background-color: rgba(0, 204, 255, 0.699);
+}
+
+.br-10{
+    border-radius: 10px;
+}
+
+.pb-10{
+    padding-bottom: 10px;
+}
+
+.pd-10{
+    padding: 10px;
 }
 
 .card{
@@ -32,16 +51,39 @@ body {
 }
 
 header{
-    background-color: rgba(255, 255, 255, 0.685);
     border: 1px none;
     border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.list{
+    float: left;
+    background-color: rgb(11, 189, 189);
     padding: 5px;
+    border-radius: 5px;
+    margin: 17px 0;
+}
+
+.list:hover{
+    float: left;
+    background-color: rgb(10, 173, 173);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 17px 0;
+}
+
+.pop{
+    background-color: rgb(0, 204, 255);
+    position: sticky;
+    top: 0;
+    padding: 4px 10px; 
+    margin: -9;
     text-align: center;
     border-radius: 5px;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
+
 
 .zetta{
     opacity: 0.5;
@@ -142,7 +184,69 @@ footer{
     border-radius: 5px;
     padding: 5px;
     text-decoration: none;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.footer:hover{
+    background-color: rgb(192, 193, 255);
+    border: 1px none;
+    border-radius: 50px;
+    transition: 300ms;
+    padding: 15px 15px;
+    text-decoration: none;
     cursor: pointer;
     font-size: 20px;
     margin: 5px;
+    color: blueviolet;
+}
+
+.item {
+    width: 45%;
+    height: 300px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.scroll {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+li{
+    text-align: left;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    background-color: aqua;
+    padding: 0.1vh;
+}
+
+/* width */
+.item::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+.item::-webkit-scrollbar-track {
+    background: linear-gradient(0deg, rgb(36, 243, 233) 0%, rgb(27, 128, 168) 100%);
+}
+  
+  /* Handle */
+.item::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, rgb(119, 132, 209) 0%, rgba(7, 0, 211, 1) 100%);
+    border-radius: 3px;
+}
+  
+  /* Handle on hover */
+.item::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
