@@ -15,8 +15,9 @@ function total(buku, diskon, pajak){
         console.log('Diskon : ', diskon);
         console.log('Harga Diskon : ', hrgDiskon);
         console.log('Pajak : ', pajak);
-        console.log();
         console.log('Harga Total : Rp', hrgPajak, ',-');
+        console.log();
+        console.log();
         console.groupEnd();
     }
 } 
