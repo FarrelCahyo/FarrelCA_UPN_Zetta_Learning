@@ -12,11 +12,11 @@ function total(buku, diskon, pajak){
         console.group();
         console.log(judul);
         console.log('--------------------');
-        console.log('Harga Awal : ', harga);
-        console.log('Diskon : ', diskon);
-        console.log('Harga Diskon : ', hrgDiskon);
-        console.log('Pajak : ', pajak);
-        console.log('Harga Total : Rp', hrgPajak, ',-');
+        console.log('Harga Awal : ',harga);
+        console.log('Diskon : ',diskon,'%');
+        console.log('Harga Diskon : ',hrgDiskon);
+        console.log('Pajak : ',pajak,'%');
+        console.log('Harga Total : Rp',hrgPajak,',-');
         console.log();
         console.log();
         console.groupEnd();
