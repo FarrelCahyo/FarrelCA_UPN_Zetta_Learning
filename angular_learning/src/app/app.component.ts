@@ -7,7 +7,10 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  taskElements = [{type:'individual',name:'First Assignment',content:'Create An Angular Project'}];
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+  taskElements = [{type:'individual',name:'Tugas Pertama',content:'Bismillah Berhasil'}];
  
   onTaskAdded(taskData: {taskName:string,taskContent:string}) {
     this.taskElements.push({
