@@ -4,8 +4,8 @@ import { Component, Injectable } from '@angular/core';
 })
 export class ItemsService {
   itemList = [
-    { itemName: 'Item 1', itemStatus: 'Baik' },
-    { itemName: 'Item 2', itemStatus: 'Rusak Ringan' },
+    { itemName: 'Item 1', itemStatus: 'Good' },
+    { itemName: 'Item 2', itemStatus: 'Broken' },
   ];
   constructor() {}
   onAddItems(name: string, status: string) {
@@ -16,12 +16,12 @@ export class ItemsService {
   }
 
   updateStatus(index: number) {
-    if (this.itemList[index].itemStatus === 'Baik') {
-      this.itemList[index].itemStatus = 'Rusak Ringan';
-    } else if (this.itemList[index].itemStatus === 'Rusak Ringan') {
-      this.itemList[index].itemStatus = 'Rusak Berat';
+    if (this.itemList[index].itemStatus === 'Perfect') {
+      this.itemList[index].itemStatus = 'Good';
+    } else if (this.itemList[index].itemStatus === 'Good') {
+      this.itemList[index].itemStatus = 'Broken';
     } else {
-      this.itemList[index].itemStatus = 'Baik';
+      this.itemList[index].itemStatus = 'Perfect';
     }
   }
   changeAllStatus(status: string) {

@@ -1,36 +1,8 @@
+<app-header></app-header>
 <div class="container">
-  <h2>Masukkan Item</h2>
-  <app-item-input></app-item-input>
-  <h2>Ubah Semua Status Item</h2>
-  <div style="border: 2px solid rgb(219, 219, 219); padding: 16px">
-    <button (click)="changeAllStatus('Baik')" class="btn" style="
-        margin: 2vh 2vh;
-        width:max-content;
-        background-color: green;
-        color: white;
-      ">
-      Baik
-    </button>
-    <button (click)="changeAllStatus('Rusak Ringan')" class="btn" style="margin: 2vh 2vh; 
-      width: max-content; background-color: yellow; color: black;">
-      Rusak Ringan
-    </button>
-    <button (click)="changeAllStatus('Rusak Berat')" class="btn"
-      style="margin: 2vh 2vh; width: max-content; background-color: red; color: white;">
-      Rusak Berat
-    </button>
-  </div>
-  <br>
-  <h2>Daftar Item</h2>
-  <div class="flex-container" style="border: 2px solid rgb(219, 219, 219); padding: 16px">
-    <app-item-cards *ngFor="let list of itemList; index as i" [items]="list" [status]="list.itemStatus">
-      <hr />
-      <button class="btn btn-danger" style="margin: 2vh 2vh; width: max-content" (click)="destroyItem(i)">
-        Hapus
-      </button>
-      <button class="btn btn-primary" style="margin: 2vh 2vh; width: max-content" (click)="updateStatus(i)">
-        Ganti Status
-      </button>
-    </app-item-cards>
-  </div>
+   <div class="row">
+      <div class="col-md-12">
+         <router-outlet></router-outlet>
+      </div>
+   </div>
 </div>

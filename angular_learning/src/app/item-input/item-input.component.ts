@@ -12,10 +12,10 @@ export class ItemInputComponent implements OnInit {
   newItemName: string = '';
   newItemStatus: string = '';
 
-  public defaultStatus: string = 'Baik';
+  public defaultStatus: string = 'Perfect';
   public defaultName: string = 'Item x';
 
-  @ViewChild('itemNameInput') itemNameInput: ElementRef | undefined;
+  @ViewChild('itemNameInput') itemNameInput: ElementRef;
 
   constructor(
     private loggingService: LoggingService,

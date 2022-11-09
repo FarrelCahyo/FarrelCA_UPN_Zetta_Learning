@@ -2,11 +2,15 @@ import {
   Component,
   OnInit,
   Input,
+  EventEmitter,
+  Output,
   OnChanges,
+  ViewEncapsulation,
   SimpleChanges,
   DoCheck,
   AfterContentInit,
   AfterContentChecked,
+  AfterViewInit,
   OnDestroy,
   ViewChild,
   ElementRef,
@@ -27,11 +31,9 @@ export class ItemCardsComponent
     AfterContentInit,
     OnDestroy
 {
-  @Input()
-  items!: { itemName: string; itemStatus: string; };
+  @Input() items: { itemName: string; itemStatus: string };
   @Input() status: any;
-  @ViewChild('heading', { static: true })
-  header!: ElementRef;
+  @ViewChild('heading', { static: true }) header: ElementRef;
 
   newItemStatus: string = '';
 
