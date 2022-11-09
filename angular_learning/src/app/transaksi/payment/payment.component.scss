@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+}
+
+button{
+    border: 1.5px solid white;
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    transition: 500ms;
+}
+
+table{
+    border: 1px solid;
+    width: 600px;
+    border-spacing: 20px;
+}
+
+span{
+    font-size: 21px;
+    
+}
+
+button:hover{
+    background-color: rgb(187, 3, 49);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: 500ms;
+}
+
+.tit{
+    background-color: white;
+}
+
+.tot{
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgb(10, 108, 255);
+}
